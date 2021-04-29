@@ -10,6 +10,8 @@
 header{
     width: 100%;
     height: 80px;
+    position: fixed;
+    background-color: #fff;
 }
 
 /* menu */
@@ -49,7 +51,7 @@ header{
 }
 
 .nav-row a:hover{
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
 }
 
 #start:hover{
@@ -67,6 +69,76 @@ header{
     padding: 7px 18px;
 }
 
+/* jumbotron */
+.jumbo{
+    background-color: #b4d0e7;
+    width: 100%;
+    height: 770px;
+}
+
+.jumbo-container{
+    width: 90%;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.jumbo-container::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/* titolo jumbotron */
+.jumbo-container-top{
+    font-size: 60px;
+    line-height: 85px;
+    margin-bottom: 40px;
+}
+
+/*jumbotron container bottom left*/
+.jumbo-container-bottom-left{
+    float: left;
+    width: 26%;
+}
+
+/* testo jumbotron */
+.jc-bottom-text{
+    font-size: 19px;
+    margin-bottom: 40px;
+}
+
+/* pulsante jumbotron */
+.jc-prova-gratuita{
+    color: white;
+    font-size: 18px;
+    padding: 10px 18px;
+    background-color: #0061ff;
+    text-decoration: none;
+}
+
+.jc-prova-gratuita:hover{
+    background-color: #2b7cff;
+}
+
+.annulla{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.jc-arrow{
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 50px;
+    color: black
+}
+
+/*jumbotron container bottom right*/
+.jumbo-container-bottom-right img{
+    width: 70%;
+    float: right;
+}
+
 /*-----debug-----*/
 /* .debug header{
     background-color: aqua;
@@ -78,4 +150,9 @@ header{
 
 .debug .nav-row{
     background-color: lightpink;
-}  */
+}  
+
+.debug .jumbo-container{
+    background-color: seagreen;
+    height: 80%;
+} */
