@@ -178,7 +178,7 @@ main{
 }
 
 /*row*/
-.row{
+.clearfix::after{
     width: 100%;
     display: table;
     content: '';
@@ -187,9 +187,9 @@ main{
 
 /*colonne*/
 .colonna{
-    width: calc(100% / 3 - 40px);
+    width: calc((100% / 3 ) - ( 80px / 3 ));
     float: left;
-    border: 1px solid grey;
+    border: 1px solid rgba(0, 0, 0, 0.3);   
 }
 
 .colonna.centrale{
@@ -232,8 +232,8 @@ main{
 }
 
 .costo-scadenza{
+    height: 80px;
     color: grey;
-    margin-bottom: 40px;
 }
 
 /* descrizione piano */
@@ -243,6 +243,11 @@ main{
 
 .archiviazione *{
     display: inline-block;
+}
+
+.gb-archiviazione{
+    width: calc(100% - 30px);
+    height: 50px;
 }
 
 .info *{
@@ -276,6 +281,8 @@ main{
 
 .lista.piano ul{
     list-style: none;
+    margin-left: 15px;
+    height: 250px;
 }
 
 .lista.piano li{
