@@ -133,10 +133,114 @@ header{
     color: black
 }
 
-/*jumbotron container bottom right*/
-.jumbo-container-bottom-right img{
+/*jumbotron container bottom*/
+.jumbo-container-bottom-right{
     width: 70%;
     float: right;
+}
+
+.jumbo-container-bottom-right img{
+    width: 900px;
+}
+
+/*corpo della pagina*/
+main{
+    width: 70%;
+    margin: 200px auto 100px auto;
+}
+
+/*piano dropbox*/
+.piano-dropbox h2 {
+    font-size: 44px;
+    margin-bottom: 50px;
+}
+
+.fatturazione{
+    margin-bottom: 50px;
+}
+
+.fatturazione div{
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.fake.check{
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    border: 1px solid grey;
+    border-radius: 50px;
+}
+
+.fake.check.select{
+    border: 5px solid #0061ff;
+}
+
+/*row*/
+.row{
+    width: 100%;
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/*colonne*/
+.colonna{
+    width: calc(100% / 3 - 27px);
+    float: left;
+    border: 1px solid grey;
+}
+
+.colonna.centrale{
+    margin: 0  40px;
+}
+
+/*intestazione colonne*/
+.cl-header{
+    font-weight: 400;
+    font-size: 20px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+/*contenuto colonne*/
+.contenuto-colonna{
+    padding: 25px;
+    font-size: 15px;
+}
+
+.contenuto-colonna *{
+    padding-bottom: 15px;
+    vertical-align: middle
+}
+
+.titolo-colonna{
+    font-size: 26px;
+}
+
+.costo{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.costo-scadenza{
+    color: grey;
+    margin-bottom: 40px;
+
+}
+
+.n-utenti *{
+    display: inline-block;
+}
+
+.archiviazione *{
+    display: inline-block;
+}
+
+.info *{
+    display: inline-block;
 }
 
 /*-----debug-----*/
@@ -155,4 +259,14 @@ header{
 .debug .jumbo-container{
     background-color: seagreen;
     height: 80%;
+} */
+
+main{
+    /* background-color: aqua; */
+    height: 2000px;
+}
+
+/*.colonna{
+    height: 300px;
+     background-color: brown;  
 } */
