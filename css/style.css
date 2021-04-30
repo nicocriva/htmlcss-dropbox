@@ -108,15 +108,16 @@ header{
 }
 
 /* pulsante jumbotron */
-.jc-prova-gratuita{
+.pulsante.prova.gratuita{
     color: white;
     font-size: 18px;
+    text-align: center;
     padding: 10px 18px;
     background-color: #0061ff;
     text-decoration: none;
 }
 
-.jc-prova-gratuita:hover{
+.pulsante.prova.gratuita:hover{
     background-color: #2b7cff;
 }
 
@@ -186,7 +187,7 @@ main{
 
 /*colonne*/
 .colonna{
-    width: calc(100% / 3 - 27px);
+    width: calc(100% / 3 - 40px);
     float: left;
     border: 1px solid grey;
 }
@@ -208,18 +209,23 @@ main{
 /*contenuto colonne*/
 .contenuto-colonna{
     padding: 25px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .contenuto-colonna *{
     padding-bottom: 15px;
-    vertical-align: middle
+    vertical-align: top
+}
+
+.contenuto-colonna img{
+    margin-right: 5px;
 }
 
 .titolo-colonna{
     font-size: 26px;
 }
 
+/* prezzi */
 .costo{
     font-size: 18px;
     font-weight: 500;
@@ -228,9 +234,9 @@ main{
 .costo-scadenza{
     color: grey;
     margin-bottom: 40px;
-
 }
 
+/* descrizione piano */
 .n-utenti *{
     display: inline-block;
 }
@@ -241,6 +247,48 @@ main{
 
 .info *{
     display: inline-block;
+}
+
+.info-text{
+    width: calc(100% - 30px);
+}
+
+/* acquista */
+.acquista.ora{
+    margin-top: 30px;
+}
+
+.acquista.ora span{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #8f8f8f;
+}
+
+.acquista.ora a{
+    color: #0061ff;
+}
+
+/* punti salienti */
+.lista.piano h3{
+    font-weight: 500;
+    font-size: 18px;
+    padding: 40px 0 15px 0;
+}
+
+.lista.piano ul{
+    list-style: none;
+}
+
+.lista.piano li{
+    max-width: calc(100% - 30px);
+    padding-left: 5px;
+}
+
+
+.lista.piano li::marker{ 
+    content: '\2713';
+    font-size: 18px;
+    color: #3581ff;
+    margin-left: 10px;
 }
 
 /*-----debug-----*/
