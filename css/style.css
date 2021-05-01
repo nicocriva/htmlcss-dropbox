@@ -5,6 +5,30 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* float */
+.dp-logo{
+    float: left;
+}
+
+.nav-row li{
+    float: left;
+}
+
+.nav-second-list{
+    float: right;
+}
+
+.jumbo-container-bottom-left{
+    float: left;
+}
+
+.jumbo-container-bottom-right{
+    float: right;
+}
+
+.colonna{
+    float: left;  
+}
 
 /* testata */
 header{
@@ -27,7 +51,6 @@ header{
 
 .dp-logo{
     height: 100%;
-    float: left;
 }
 
 .nav-row::after{
@@ -37,7 +60,6 @@ header{
 }
 
 .nav-row li{
-    float: left;
     list-style-type: none;
     margin: 0 25px;
 }
@@ -57,10 +79,6 @@ header{
 #start:hover{
     border: none;
     background-color: #3e87fd;
-}
-
-.nav-second-list{
-    float: right;
 }
 
 #start{
@@ -97,7 +115,6 @@ header{
 
 /*jumbotron container bottom left*/
 .jumbo-container-bottom-left{
-    float: left;
     width: 26%;
 }
 
@@ -137,7 +154,6 @@ header{
 /*jumbotron container bottom*/
 .jumbo-container-bottom-right{
     width: 70%;
-    float: right;
 }
 
 .jumbo-container-bottom-right img{
@@ -178,7 +194,7 @@ main{
 }
 
 /*row*/
-.clearfix::after{
+.row.clearfix::after{
     width: 100%;
     display: table;
     content: '';
@@ -188,12 +204,17 @@ main{
 /*colonne*/
 .colonna{
     width: calc((100% / 3 ) - ( 80px / 3 ));
-    float: left;
     border: 1px solid rgba(0, 0, 0, 0.3);   
 }
 
 .colonna.centrale{
     margin: 0  40px;
+}
+
+.ultima.colonna{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
 }
 
 /*intestazione colonne*/
@@ -212,6 +233,18 @@ main{
     font-size: 14px;
 }
 
+.contenuto-ultima-colonna{
+    padding: 25px 0 25px 25px;
+    font-size: 14px;
+    position: relative;
+}
+
+.contenuto-colonna-dx{
+    position: absolute;
+    top: 35px;
+    right: 25px;
+}
+
 .contenuto-colonna *{
     padding-bottom: 15px;
     vertical-align: top
@@ -225,6 +258,14 @@ main{
     font-size: 26px;
 }
 
+.contenuto-colonna-sx *{
+    margin-bottom: 20px;
+}
+
+.contatta.ufficio{
+    font-size: 18px;
+    font-weight: 500;
+}
 /* prezzi */
 .costo{
     font-size: 18px;
@@ -298,6 +339,7 @@ main{
     margin-left: 10px;
 }
 
+
 /*-----debug-----*/
 /* .debug header{
     background-color: aqua;
@@ -324,4 +366,9 @@ main{
 /*.colonna{
     height: 300px;
      background-color: brown;  
-} */
+} 
+
+.ultima.colonna{
+    height: 250px;
+}
+*/
