@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Questrial', sans-serif;
 }
 
 /* float */
@@ -30,12 +30,32 @@
     float: left;  
 }
 
+.contatto.partner *{
+    float: left;
+}
+
+/*clearfix*/
+.row.clearfix::after{
+    width: 100%;
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.contatto.partner{
+    width: 100%;
+    display: table;
+    content: '';
+    clear: both;
+}
+
 /* testata */
 header{
     width: 100%;
     height: 80px;
     position: fixed;
     background-color: #fff;
+    z-index: 500;
 }
 
 /* menu */
@@ -193,14 +213,6 @@ main{
     border: 5px solid #0061ff;
 }
 
-/*row*/
-.row.clearfix::after{
-    width: 100%;
-    display: table;
-    content: '';
-    clear: both;
-}
-
 /*colonne*/
 .colonna{
     width: calc((100% / 3 ) - ( 80px / 3 ));
@@ -215,6 +227,7 @@ main{
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.3);
     margin-top: 40px;
+    float: none;
 }
 
 /*intestazione colonne*/
@@ -339,8 +352,43 @@ main{
     margin-left: 10px;
 }
 
+/* sezione contatto partner */
+.contatto.partner{
+    margin-top: 100px;
+    width: 100%;
+}
 
-/*-----debug-----*/
+.contatto.partner-sx img{
+    width: 600px;
+}
+
+.contatto.partner-dx{
+    width: calc(100% - 600px);
+    padding: 100px 0 100px 80px;
+}
+
+.partner-dx *{
+    margin-bottom: 20px;
+}
+
+.contatto.partner-dx h3{
+    font-size: 26px;
+}
+
+#partner-dx-text{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.pulsante.partner{
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+/*---------------debug---------------*/
 /* .debug header{
     background-color: aqua;
 }
@@ -356,19 +404,24 @@ main{
 .debug .jumbo-container{
     background-color: seagreen;
     height: 80%;
-} */
+}
 
 main{
-    /* background-color: aqua; */
+    background-color: aqua;
     height: 2000px;
 }
 
-/*.colonna{
+.colonna{
     height: 300px;
      background-color: brown;  
 } 
 
 .ultima.colonna{
     height: 250px;
+}
+
+
+.contatto.partner{
+    background-color: rosybrown;
 }
 */
