@@ -202,7 +202,7 @@ main{
 }
 
 /*piano dropbox*/
-.piano-dropbox h2 {
+#piano-dropbox h2 {
     font-size: 44px;
     margin-bottom: 50px;
 }
