@@ -5,6 +5,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+h2{
+    font-size: 44px;
+    font-weight: 500;
+}
+
 /* float */
 .dp-logo{
     float: left;
@@ -59,6 +64,12 @@
 
 .dropbox-business::after{
     width: 100%;
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.team-row::after{
     display: table;
     content: '';
     clear: both;
@@ -127,6 +138,7 @@ header{
     background-color: #b4d0e7;
     width: 100%;
     height: 770px;
+    margin-bottom: 200px;
 }
 
 .jumbo-container{
@@ -196,14 +208,13 @@ header{
 }
 
 /*corpo della pagina*/
-main{
+/*piano dropbox*/
+#piano-dropbox{
     width: 70%;
-    margin: 200px auto 100px auto;
+    margin: 0 auto;
 }
 
-/*piano dropbox*/
 #piano-dropbox h2 {
-    font-size: 44px;
     margin-bottom: 50px;
 }
 
@@ -252,7 +263,7 @@ main{
     margin: auto;
     padding: 10px;
     text-align: center;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.486);
 }
 
 /*contenuto colonne*/
@@ -369,8 +380,8 @@ main{
 
 /* sezione contatto partner */
 .contatto.partner{
-    width: 100%;
-    margin: 100px 0 120px;
+    width: 70%;
+    margin: 100px auto 120px;
 }
 
 .contatto.partner-sx img{
@@ -403,24 +414,27 @@ main{
     margin-top: 10px;
 }
 
+.pulsante.partner:hover{
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
 /* sezione business */
 .dropbox-business{
-    width: 100%;
+    width: 70%;
+    margin: 0 auto 100px auto;
 }
 
 .business-titolo{
-    font-size: 44px;
-    text-align: center;
     margin-bottom: 50px;
 }
 
 .business-container, .business-container.center{
-    width: calc((100% / 3) - 20px);
+    width: calc((100% / 3) - 30px);
     height: 600px;
 }
 
 .business-container.center{
-    margin: 0 30px;
+    margin: 0 45px;
 }
 
 .business-container-img{
@@ -445,7 +459,113 @@ main{
 }
 
 
+/* sezione team */
+.team{
+    width: calc(100vw - (100vw - 100%));
+}
 
+.team-top{
+    width: 70%;
+    margin: 0px auto;
+}
+
+.team-top h2{
+    margin-bottom: 20px;
+}
+
+.team-top a{
+    color: #0061ff;
+    font-size: 18px;
+}
+
+.team-top a:hover{
+    text-decoration: none;
+}
+
+/* quadrati team */
+.team-row{
+    margin-top: 40px;
+}
+
+.team-column{
+    width: 30%;
+    float: left;
+}
+
+.team-column-center{
+    width: 40%;
+    float: left;
+}
+
+.team-logo{
+    width: 50%;
+    height: 50%;
+    float: left;
+    position: relative;
+}
+
+/* colore sfondo quadrati team */
+.first.team-logo{
+    background-color: #a2d39b;
+}
+
+.second.team-logo{
+    background-color: #61082b;
+}
+
+.third.team-logo{
+    background-color: #0093ce;
+}
+
+.fourth.team-logo{
+    background-color: #ff1c1c;
+}
+
+.fifth.team-logo{
+    background-color: #d5001f;
+}
+
+.sixth.team-logo{
+    background-color: #b4d0e7;
+}
+
+.seventh.team-logo{
+    background-color: #0d2481;
+}
+
+.eighth.team-logo{
+    background-color: #ffd830;
+}
+
+.team-logo img{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert();
+}
+
+.team-column-center{
+    background-color: #f5f5f5;
+    padding: 70px;
+}
+
+.team-column-center img{
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.team-linea{
+    width: 70px;
+    border-top: 1px solid rgba(128, 128, 128, 0.479);
+    margin-bottom: 40px;
+}
+
+.team-column-center p{
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
 /*---------------debug---------------*/
 /* .debug header{
     background-color: aqua;
@@ -471,7 +591,7 @@ main{
 
 .colonna{
     height: 300px;
-     background-color: brown;  
+    background-color: brown;  
 } 
 
 .ultima.colonna{
@@ -494,7 +614,7 @@ main{
     height: 500px;
 }
 
- .business-container-img{
+.business-container-img{
     height: 200px;
     background-color: darkorange;
 } 
@@ -507,4 +627,19 @@ main{
 .business-container-text{
     height: 200px;
     background-color: darkslategray;
+}
+
+.team{
+    height: 100vh;
+    background-color: royalblue;
 }*/
+
+.team-column{
+    background-color: sandybrown;
+    height: 450px;
+}
+
+.team-column-center{
+    /* background-color: sandybrown; */
+    height: 450px;
+}
