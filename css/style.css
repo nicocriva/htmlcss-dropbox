@@ -626,29 +626,64 @@ header{
 
 .elenco-domande{
     width: 100%;
-    position: relative;
 }
 
 .elenco-domande ul{
     font-size: 18px;
-    line-height: 80px;
     list-style: none;
 }
 
-.elenco-domande ul li::after{
-    content: '\2228';
-    position: absolute;
-    right: 40px;
+.li-row{
+    position: relative;
 }
-
 
 .elenco-domande ul li{
-    border-top: 1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding: 40px 0;
 }
 
-.elenco-domande ul li:last-child{
-    border-bottom: 1px solid rgba(0,0,0,0.3);
+.elenco-domande ul li.row:last-child{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
+
+.dropdown-li a{ 
+    color: grey;
+}
+
+/* freccie lista domande */
+.freccia-giu, .freccia-su{
+    font-size: 22px;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.li-row:hover .freccia-giu{
+    display: none;
+}
+
+.freccia-su{
+    display: none;
+}
+
+ .li-row:hover .freccia-su{
+    display: inline-block;
+} 
+
+/* dropdown menu domande */
+.dropdown-li{
+    color: grey;
+    text-align: justify;
+    padding: 0 200px 30px 0;
+    display: none;
+}
+
+.li-row:hover + .dropdown-li{
+    display: block;
+}
+
+
 
 /*---------------debug---------------*/
 /* .debug header{
