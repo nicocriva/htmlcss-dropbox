@@ -760,6 +760,52 @@ footer ul a{
 
 }
 
+
+
+/* bonus dropdown menu */
+.nav-dropdown-menu{
+    height: 270px;
+    position: absolute;
+    top: 80px;
+    left: 190px;
+    background-color: white;
+    display: none;
+}
+
+
+.nav-first-button:hover + .nav-dropdown-menu{
+    display: block;
+}
+
+.nav-dropdown-menu:hover{
+    display: block;
+}
+
+.bonus-dp{
+    float: left;
+    width: 250px;
+}
+
+.bonus-dp li{
+    float: none;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.bonus-dp li:nth-child(2){
+    margin-top: 15px;
+}
+
+.bonus-dp li:hover:not(.nav-list-title){
+    background-color: lightgrey;
+}
+
+.nav-list-title{
+    font-size: 18px;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 10px;
+}
+
 /*---------------debug---------------*/
 /* .debug header{
     background-color: aqua;
