@@ -75,6 +75,12 @@ h2{
     clear: both;
 }
 
+.prova-row::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
 /* testata */
 header{
     width: 100%;
@@ -571,6 +577,41 @@ header{
     line-height: 1.6;
     margin-bottom: 40px;
 }
+
+/* sezione di prova */
+.prova-dropbox{
+    width: calc(100vw - (100vw - 100%));
+    background-color: #b4d0e7;
+    margin-bottom: 150px;
+}
+
+.prova-row{
+    width: 70%;
+    margin: auto;
+    padding: 120px 0;
+    position: relative;
+}
+
+
+.prova-row h2{
+    width: 60%;
+    float: left;
+    color: #61082b;
+}
+
+.prova-row a{
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    text-align: center;
+    padding: 10px 18px;
+    text-decoration: none;
+}
+
 
 /*---------------debug---------------*/
 /* .debug header{
