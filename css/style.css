@@ -489,12 +489,16 @@ header{
 
 .team-column{
     width: 30%;
+    height: 450px;
     float: left;
 }
 
 .team-column-center{
     width: 40%;
+    height: 450px;
+    padding: 70px;
     float: left;
+    background-color: #f5f5f5;
 }
 
 .team-logo{
@@ -537,6 +541,7 @@ header{
     background-color: #ffd830;
 }
 
+/* immagini logo team */
 .team-logo img{
     width: 60%;
     position: absolute;
@@ -544,11 +549,6 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     filter: invert();
-}
-
-.team-column-center{
-    background-color: #f5f5f5;
-    padding: 70px;
 }
 
 .team-column-center img{
@@ -559,13 +559,19 @@ header{
 .team-linea{
     width: 70px;
     border-top: 1px solid rgba(128, 128, 128, 0.479);
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.team-description{
+    overflow: auto;
+    height: 150px;
 }
 
 .team-column-center p{
     line-height: 1.6;
     margin-bottom: 40px;
 }
+
 /*---------------debug---------------*/
 /* .debug header{
     background-color: aqua;
@@ -632,14 +638,12 @@ main{
 .team{
     height: 100vh;
     background-color: royalblue;
-}*/
+}
 
 .team-column{
     background-color: sandybrown;
-    height: 450px;
 }
 
 .team-column-center{
-    /* background-color: sandybrown; */
-    height: 450px;
-}
+    background-color: sandybrown;
+}*/
