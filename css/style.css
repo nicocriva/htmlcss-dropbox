@@ -81,6 +81,12 @@ h2{
     content: '';
 }
 
+.ft-list-row::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
 /* testata */
 header{
     width: 100%;
@@ -624,10 +630,6 @@ header{
     margin-bottom: 50px;
 }
 
-.elenco-domande{
-    width: 100%;
-}
-
 .elenco-domande ul{
     font-size: 18px;
     list-style: none;
@@ -635,14 +637,11 @@ header{
 
 .li-row{
     position: relative;
-}
-
-.elenco-domande ul li{
     border-top: 1px solid rgba(0,0,0,0.2);
     padding: 40px 0;
 }
 
-.elenco-domande ul li.row:last-child{
+.li-row:last-of-type{
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
@@ -659,11 +658,11 @@ header{
     transform: translate(-50%, -50%);
 }
 
-.li-row:hover .freccia-giu{
+.freccia-su{
     display: none;
 }
 
-.freccia-su{
+.li-row:hover .freccia-giu{
     display: none;
 }
 
@@ -683,7 +682,53 @@ header{
     display: block;
 }
 
+/* piè di pagina */
+footer{
+    background-color: black;
+    height: 600px;
+    position: relative;
+}
 
+.ft-container{
+    width: 70%;
+    margin: 0 auto 100px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ft-list-title{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.ft-list-row ul{
+    color: white;
+    float: left;
+    list-style: none;
+    line-height: 35px;
+    padding-right: 80px;
+}
+
+
+footer ul a{
+    color: white;
+    text-decoration: none;
+}
+
+.lingua{
+    margin-top: 50px;
+    color: white;
+}
+
+.fas.fa-globe-americas{
+    border-top: 1px solid white;
+    padding-top: 30px;
+
+}
 
 /*---------------debug---------------*/
 /* .debug header{
@@ -759,4 +804,9 @@ main{
 
 .team-column-center{
     background-color: sandybrown;
+}
+
+.ft-container{
+    height: 400px;
+    background-color: royalblue;
 }*/
