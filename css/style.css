@@ -612,6 +612,43 @@ header{
     text-decoration: none;
 }
 
+/* sezione domande */
+.domande{
+    width: 70%;
+    margin: 0 auto 100px auto;
+}
+
+.titolo-domande{
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.elenco-domande{
+    width: 100%;
+    position: relative;
+}
+
+.elenco-domande ul{
+    font-size: 18px;
+    line-height: 80px;
+    list-style: none;
+}
+
+.elenco-domande ul li::after{
+    content: '\2228';
+    position: absolute;
+    right: 40px;
+}
+
+
+.elenco-domande ul li{
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+.elenco-domande ul li:last-child{
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
 
 /*---------------debug---------------*/
 /* .debug header{
